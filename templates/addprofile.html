@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+		<!-- Start Contact Form -->
+		<div class="untree_co-section">
+      <div class="container">
+
+        <div class="block">
+          <div class="row justify-content-center">
+
+
+            <div class="col-md-8 col-lg-8 pb-4">
+
+
+              
+
+              <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h2>ADD PROFILE</h2><br><br>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="text-black" for="fname">Name</label>
+                      <input type="text" class="form-control" id="fname" name="name" required style="width: 735px;">
+                    </div>
+                  </div>
+                  <!-- <div class="col-6">
+                    <div class="form-group">
+                      <label class="text-black" for="lname">Email</label>
+                      <input type="email" class="form-control" id="lname" name="email">
+                    </div>
+                  </div>
+                </div> -->
+                <div class="form-group">
+                  <label class="text-black" for="email">Place</label>
+                  <input type="text" class="form-control" id="email" name="place" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="text-black" for="email">Phone</label>
+                  <input type="number" class="form-control" id="email" name="pnumber" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="text-black" for="email">Image</label>
+                  <input type="file" class="form-control" id="email" name="image" required>
+                </div>
+
+
+                <div class="form-group mb-5">
+                  <label class="text-black" for="message">Address</label>
+                  <input type="text" class="form-control" id="message" cols="30" rows="5" name="address" required>
+                </div>
+
+                <button type="submit" style="background-color: black; color: white; border-radius: 30px; font-weight: 500; width: 200px; height: 50px; font-size: medium; margin-left: 20px;">Add Profile</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- End Contact Form -->
+
+
+
+
+{% endblock %}
